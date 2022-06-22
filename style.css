@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+}
+
+@font-face {
+  font-family: "Oswald", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+}
+
+:root {
+  --color1: #428edc;
+  --color2: black;
+  --font2: "Poppins", sans-serif;
+  --font1: "Oswald", sans-serif;
+}
+
+.font1 {
+  font-family: var(--font1);
+}
+
+.font2 {
+  font-family: var(--font2);
+}
+
+.color1 {
+  color: var(--color1);
+}
+
+.color2 {
+  color: var(--color2);
+}
+
+/* Navbar style */
+.navbar-effect:hover {
+  font-size: 21px;
+}
+
+a.navbar-brand > span {
+  font-family: var(--font1);
+  font-weight: bold;
+}
+
+a.navbar-brand > span:first-child {
+  color: var(--color1);
+}
+
+a.navbar-brand > span:last-child {
+  color: var(--color2);
+}
+
+ul.active-btn > li {
+  border-bottom: 2px solid #f8f9fa;
+  box-sizing: border-box;
+}
+
+ul.active-btn > li:hover {
+  color: var(--color1) !important;
+  border-bottom: 2px solid var(--color1);
+  box-sizing: border-box;
+}
+
+ul.active-btn > li::after {
+  color: var(--color1) !important;
+  border-bottom: 2px solid var(--color1);
+  box-sizing: border-box;
+}
+
+ul.active-btn > li a:hover {
+  color: var(--color1) !important;
+  font-weight: 500;
+}
+
+ul.active-btn > li a::after {
+  color: var(--color1) !important;
+  font-weight: 200;
+}
+
+ul.active-btn > li a {
+  color: var(--color2);
+}
+
+/* Jumbotron style */
+#jumbotron {
+  padding-top: 8rem;
+  background-color: white;
+}
+
+#jumbotron img {
+  height: 170px;
+  width: 170px;
+}
+
+/* About me*/
+section#about-me {
+  background-color: var(--color1);
+}
+#about-me-pl {
+  padding-left: 35%;
+  padding-right: 20px;
+  border-right: 2px solid var(--color2);
+  box-sizing: border-box;
+}
+
+/* Portfolio */
+.port-effect > .bord:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 5px var(--color1);
+}
+
+/* blog */
+#blog {
+  background-color: var(--color1);
+}
+
+.blog-bl {
+  padding-left: 20px;
+  border-left: 2px solid var(--color2);
+  box-sizing: border-box;
+}
+
+/* contact */
+#contact {
+  background-color: var(--color1);
+  padding-bottom: 50px;
+}
+
+.contact-right {
+  padding-left: 35%;
+  padding-right: 20px;
+  border-right: 2px solid var(--color2);
+  box-sizing: border-box;
+}
